@@ -65,4 +65,8 @@ public class Computer {
         return "An Artificial intelligence named " + name;
                 
     }
+    
+    void testGit(){
+        
+    }
 }
