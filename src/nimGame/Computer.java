@@ -66,7 +66,10 @@ public class Computer {
                 
     }
     
-    void testGit(){
+    void testGit(){      
+    }
+    
+    void secondTest(){
         
     }
 }
