@@ -9,6 +9,10 @@ package nimGame;
  * @author smithg
  */
 public class Tests {
+    
+    public static void testGit(){
+        
+    }
     public static void main(String[] args){
         
         // Uncomment sections as necessary to test your code
