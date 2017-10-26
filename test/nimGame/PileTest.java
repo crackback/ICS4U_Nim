@@ -16,21 +16,20 @@ import static org.junit.Assert.*;
  * @author smithg
  */
 public class PileTest {
-    
-    
+
     /**
      * Test of getStones method, of class Pile.
      */
     @Test
     public void testGetStones() {
         System.out.println("getStones");
-        
+
         // Case 1
         Pile instance = new Pile(20);
         int expResult = 20;
         int result = instance.getStones();
         assertEquals(expResult, result);
-        
+
         //Case 2
         Pile instance1 = new Pile(15);
         int expResult1 = 15;
@@ -44,15 +43,15 @@ public class PileTest {
     @Test
     public void testSetStones() {
         System.out.println("setStones");
-        
+
         Pile instance = new Pile(20);
-        
+
         //Case 1
         instance.setStones(15);
         int expResult = 15;
         int result = instance.getStones();
         assertEquals(expResult, result);
-        
+
         //Case 2
         instance.setStones(7);
         int expResult1 = 7;
@@ -68,12 +67,12 @@ public class PileTest {
         System.out.println("removeStones");
 
         Pile instance = new Pile(20);
-   
+
         //Case 1
         int expResult = 17;
         instance.removeStones(3);
         assertEquals(expResult, instance.getStones());
-        
+
         // Case 2
         int expResult1 = 16;
         instance.removeStones(1);
@@ -86,13 +85,13 @@ public class PileTest {
     @Test
     public void testIsGameOver() {
         System.out.println("isGameOver");
-        
+
         // Case 1
         Pile instance = new Pile(20);
         boolean expResult = false;
         boolean result = instance.isGameOver();
         assertEquals(expResult, result);
-        
+
         //Case 2
         Pile instance1 = new Pile(0);
         boolean expResult1 = true;
@@ -106,19 +105,19 @@ public class PileTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        
+
         //Case 1
         Pile instance = new Pile(20);
         String expResult = "This is a pile with 20 stones.";
         String result = instance.toString();
         assertEquals(expResult, result);
-        
-       
+
+
         //Case 2
         Pile instance1 = new Pile(7);
         String expResult1 = "This is a pile with 7 stones.";
         String result1 = instance1.toString();
         assertEquals(expResult1, result1);
-        
+
     }
 }

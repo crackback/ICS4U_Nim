@@ -7,8 +7,7 @@ package nimGame;
  */
 public class Computer {
     
-    private String name;
-    
+    private String name;    
     
     /**
      * Constructs a computer object whose
@@ -49,8 +48,7 @@ public class Computer {
         System.out.println(name + " removes " + remove + " stones.");
         p.removeStones(remove);
         
-    }
-    
+    }    
     
     /**
      * Returns a string representing the computer object.
@@ -64,13 +62,5 @@ public class Computer {
     public String toString(){
         return "An Artificial intelligence named " + name;
                 
-    }
-    
-    void doesThisCommitToRemote(){
-        
-    }
-   
-    void secondTest(){
-        
     }
 }
